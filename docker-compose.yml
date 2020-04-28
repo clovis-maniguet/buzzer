@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    container_name: buzzer_app
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 8090:8090
+    restart: always
