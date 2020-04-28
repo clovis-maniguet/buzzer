@@ -52,11 +52,23 @@ header {
 }
 
 .container {
-  width: 100%;
-  max-width: 400px;
+  width: 400px;
   padding: 1em;
   margin: 0 auto;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
+.wrapper {
+  width: 400px;
+  padding: 1em;
+  margin: 0 auto;
+  min-height: 85vh;
+}
+
 .view button:last-child {
   margin-bottom: 0;
 }
@@ -112,7 +124,7 @@ button:active {
   transform: translateY(  1px);
 }
 button:focus {
-  box-shadow: 0 0 0 3px #ABB7FF;
+  outline: none;
 }
 
 .main-image {
@@ -120,14 +132,15 @@ button:focus {
 }
 
 .buzzer {
-  height: 10em;
+  width: 340px;
+  height: 340px;
+  margin: auto;
   font-size: 2em;
+  border-radius: 200px;
   background-color: rgb(243, 175, 185);
   color: rgb(18, 30, 102);
 }
-.buzzer:focus {
-  box-shadow: 0 0 0 3px #ABB7FF;
-}
+.buzzer:focus,
 .buzzer:hover,
 .buzzer:active {
   background-color: #e97284;

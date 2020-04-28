@@ -38,10 +38,4 @@ buzzer.addEventListener('click', (e) => {
   socket.emit('buzz', user)
 })
 
-editInfo.addEventListener('click', () => {
-  joined.classList.add('hidden')
-  form.classList.remove('hidden')
-  body.classList.remove('buzzer-mode')
-})
-
 getUserInfo()
